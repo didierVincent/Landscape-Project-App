@@ -44,38 +44,29 @@ Node, Express, MongoDB, Mongoose, CSS & JavaScript
 **Home / Your Projects Page**
 ![Home Page / Your Projects](<wireframe/Home Page.png>)
 
-**Project Builder Page** (Example Project List)
-![Project Builder Page 1](<wireframe/Project Builder Page (Example List).png>)
+**Project Builder Page** (New Project)
+![New Project](<wireframe/Project Builder Page (New Project).png>)
 
-**Project Builder Page** (Empty Project List, Buttons Annotated)
-![Project Builder Page 2](<wireframe/Project Builder Page (Buttons Explained, Empty List).png>)
-
-**(version 1)**
-<BR>
-
-**+ Add Landscape Page** (+Add Decking Page)
-![Add Landscape 1](<wireframe/+ Add Landscape Page (eg + Add Decking) without custom.png>)
-
-**(version 2)**
-<BR>
-
-**Add Landscape Page, with Custom** (+Add Decking Page)
-<BR> (might not use this version)
-
-![Add Landscape 2](<wireframe/+ Add Landscape Page (eg + Add Decking).png>)
-
-**+ Add Landscape Item Page** (+ Add Timber)
-![Add Landscape Item](<wireframe/+ Add Landscape Item Page.png>)
+**(Example Project, Buttons Annotated)**
+![alt text](<wireframe/Project Builder Page (Example List, Buttons Explained).png>)
 
 **+ Add Single Item Page** (full product list)
 ![Add Single Item](<wireframe/+ Add Single Item Page.png>)
 
-**+ Add Custom Page**
-![Add Custom Page](<wireframe/+ Add Custom Page.png>)
+## Wireframe (Extras)
+
+**+ Add Landscape Page** (+Add Decking Page)
+![Add Landscape 1](<wireframe/+ Add Landscape Page (eg + Add Decking) without custom.png>)
+
+**+ Add Category Item Page** (+ Add Timber)
+![Add Category Item Page](<wireframe/+ Add Category Item Page.png>)
+
+**+ Add Custom Item Page**
+![Add Custom Item Page](<wireframe/+ Add Custom Page.png>)
 
 ## Database ER Diagram
 
-![ER Diagram](<wireframe/Database ER diagram v2.0.png>)
+![ER Diagram](<wireframe/Database ER diagram v2.1.png>)
 
 ## Roadmap
 
@@ -100,32 +91,91 @@ Node, Express, MongoDB, Mongoose, CSS & JavaScript
 ### Create Mock Up Data for app
 
 - [x] Create an ER Diagram to plan product database
-- [x] Hard code a mock up product list of items for database
-- [x] Categorise some products into landscape types (Eg. Decking, Retaining Wall)
-- [x] Mock up product prices
+- [x] Create a mock up product list of 20 items for database
+- [x] Give each product a category (Decking, Retaining Wall, Other)
+- [x] Add data to new MongoDB database
 
 ### Create Wireframe
 
 - [x] Draft wireframe, including all different views
-- [ ] Finalise wireframe in Figma
+- [x] Finalise wireframe in Figma
 
-### Create Express App
+## Create Express App
 
-- [ ] Create basic views and routes
-- [ ]
-- [ ]
-- [ ]
+#### Create basic routes to MVP pages first
 
-### Create Item List Page
+- [ ] Login
+- [ ] Projects
+- [ ] Project Builder
+- [ ] Add Single Item
+
+### All Pages - Quick Sidebar CSS
+
+- [ ] Quickly create sidebar for each view (setup in stylesheet?)
+
+### View: Login Page
+
+- [ ] Create quick view, (setup OAuth later)
+
+### View: Projects Page
+
+- [ ] Show user created projects in a list (with details if possible like in wireframe)
+- [ ] Add [+ New Project] button that redirects to Project Builder Page
+
+### View: Project Builder Page
+
+- [ ] Project List showing items selected underneath
+- [ ] Add a Quanity input box next to each item
+- [ ] (Default text shown if no items selected yet)
+- [ ] Project Builder buttons: [+ Add Single Item] (redirects to Add Single Item Page)
+- [ ] Display Total Project Cost: (setup later)
+- [ ] Save button (saves and redirects to Projects page)
+
+### View: Add Single Item Page
+
+- [ ] Add 20 Items from mock up database in a list
+- [ ] [+ Add] buttons (setup later)
+
+### CRUD: Login Page
+
+- [ ] Learn/Setup OAuth for page
+
+### CRUD: Projects Page
+
+- [ ] Set up so user can create projects and view/delete them on their account
+- [ ] Add a edit/delete button
+
+### CRUD: Project Builder Page
+
+- [ ] Make sure selected Items add to list
+- [ ] Setup Display Total Project Cost: Calculate sum of item prices and show in text
+- [ ] Add a Quanity input box for each item
+- [ ] Add delete button to remove an item
+
+### CRUD: Add Single Item Page
+
+- [ ] Add '+Add' button to each item (adds to project list and redirects to Project Builder Page)
+
+### CSS Styling / Details (ref to wireframe)
+
+- [ ] Add more detail to side bar
+- [ ] Make pages to replicate original wireframe
+- [ ] Add sort button to Projects Page?
+- [ ] Add search box to Projects Page?
+      (add more details below later...)
+
+## Add Extra Pages
+
+(add more details below later...)
+
+#### Add Landscape Page
+
+#### Add Category Item Page
 
 ### Refactor using Real Data
 
 - [ ] Find realistic products from competitive suppliers, and replace database
 - [ ] Use APIs where available to retrieve up to date prices
-
-### OAuth
-
-- [ ] Setup OAuth for user login
 
 ### Things to refactor
 
