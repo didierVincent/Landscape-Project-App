@@ -66,7 +66,7 @@ Node, Express, MongoDB, Mongoose, CSS & JavaScript
 
 ## Database ER Diagram
 
-![ER Diagram](<wireframe/Database ER diagram v2.1.png>)
+![ER Diagram](<wireframe/Database ER diagram v2.3.png>)
 
 ## Roadmap
 

@@ -1,8 +1,110 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: flex;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #0489aa;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.infotext {
+  color: grey;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+}
+
+.login img {
+  height: 30px;
+}
+
+table {
+  width: 50%;
+  text-align: left;
+  border-spacing: 20px;
+}
+
+button {
+  border: none;
+  border-radius: 4%;
+  padding: 5px 10px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+button:hover {
+  color: black;
+  background-color: #0489aa;
+}
+
+button.big-button {
+  padding: 10px 20px;
+  font-size: larger;
+}
+
+button.red {
+  background-color: #bf4343;
+  font-size: 70%;
+}
+
+.total-cost {
+  display: flex;
+  justify-content: space-evenly;
 }

@@ -1,0 +1,39 @@
+<%- include('../partials/header') %>
+<div class="content">
+  <h5>+ Add Single Item</h5>
+  <HR />
+
+  <table id="list">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Supplier</th>
+        <th>Category</th>
+        <th>Quality</th>
+        <th>Price</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% items.forEach(function(i) { %>
+      <tr>
+        <form action="/your-projects/project-builder/<%=projectID%>/add-items" method="POST">
+        <td><input type="hidden" name="Name" value="<%= i.Name%>"><%= i.Name%></td>
+        <td><input type="hidden" name="Supplier" value="<%= i.Supplier %>"><%= i.Supplier %></td>
+        <td><input type="hidden" name="Category_ID" value="<%= i.Category_ID %>"><%= i.Category_ID %></td>
+        <td><input type="hidden" name="Quality" value="<%= i.Quality %>"><%= i.Quality %> / 3</td>
+        <td>$<input type="hidden" name="Price" value="<%= i.Price %>"><%= i.Price %></td>
+        <td>
+            <button type="submit">+ Add</button></a>
+          </form>
+          </td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+  <h5>Total Project Cost: (insert "projects.Total_Project_Cost")</h5>
+  <a href="/project-builder/"><button type="button">Go back</button></a>
+  <%- include('../partials/footer') %>
+</div>

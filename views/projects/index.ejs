@@ -1,0 +1,52 @@
+<%- include('../partials/header') %>
+<div class="content">
+  <h2>Your Projects</h2>
+
+  <div>Your projects will appear below:</div>
+  <BR>
+
+    <table id="list">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Project Title</th>
+            <th>Time Created</th>
+            <!-- <th>Total Project Cost</th> -->
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+  <% user.projects.forEach(function(p) { %>
+    <tr>
+  <td>#<%= p._id.toString().slice(21,24)%></td>
+  <td><%= p.Name %> </td>
+  <td> 
+    <%= p.createdAt.getHours() %>:<%= p.createdAt.getMinutes() %>:<%= p.createdAt.getSeconds() %>
+    (<%= p.createdAt.getDate() %>-<%= p.createdAt.getMonth() %>-<%= p.createdAt.getFullYear() %>)
+  </td>
+<!-- <td>($0.00)</td> -->
+  <td>
+    <!-- <a href="/your-projects/project-builder/<%= p._id %>">View/Edit</a>  -->
+    <form action="/your-projects/project-builder/<%= p._id %>" method="GET">
+    <button type="submit">View/Edit</button>
+    </form>
+  </td>
+  <td>
+    <form action="" method="DELETE">
+      <button class="red" type="submit">Delete Project</button>
+    </form>
+  </td>
+</tr>
+      <% }); %>
+    </tbody>
+</table>
+      <HR>
+    <BR>
+        <form action="/your-projects/project-builder/:id" method="POST">
+            <button href="/your-projects/project-builder/<%= user.projects._id %> 
+              type="submit">+ Build New Project</button>
+        </form>
+      <%- include('../partials/footer') %>
+  </div>
+</div>
