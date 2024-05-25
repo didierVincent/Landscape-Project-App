@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 
 const itemSchema = new Schema(
   {
-    _id: String,
+    // _id: String,
     Item_ID: String,
     Category_ID: String,
     Name: String,

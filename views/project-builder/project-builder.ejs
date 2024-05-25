@@ -1,21 +1,22 @@
 <%- include('../partials/header') %>
 <div class="content">
-  <h3>Project Builder</h3>
+  <h1>Project Builder</h1>
 
-  <form action="/your-projects/project-builder/:id" method="PUT">
+  <form action="/your-projects/<%= user._id%>/project-builder/<%= projectID%>?_method=PUT" method="POST">
     <label>Project Title:</label>
     <BR />
     <BR />
     <input type="text" name="Name" placeholder="<%= project.Name %>" />
     <button type="submit">Save Name</button>
   </form>
+
   <HR />
   <h4>Project List</h4>
   <% if (project.Items.length) { %>
   <table id="list">
     <thead>
       <tr>
-        <th>Product Name</th>
+        <th>Item</th>
         <th>Supplier</th>
         <th>Category</th>
         <th>Quality</th>
@@ -36,14 +37,15 @@
         <td><%= i.Quality %> / 3</td>
         <td>$<%= i.Price %></td>
         <td>
-          <form action="" method="DELETE">
+          <form action="/your-projects/<%= user._id%>/project-builder/<%= projectID%>/items/<%= i._id%>?_method=DELETE" method="POST">
+            <input type="hidden" name="Price" value="<%= i.Price%>">
             <button class="red" type="submit">Delete Item</button>
           </form>
           
         </td>
       </tr>
       <% }); %>
-    </tbody>
+  </tbody>
   </table>
 
   <% } else { %>
@@ -60,11 +62,11 @@
         <div></div>
         Total Project Cost: $<%= TPC%> <div></div><div></div></h4>
       <HR />
-      <h4>Add items below:</h4>
+      <h4>Project Builder</h4>
       <HR />
 
       <form
-        action="/your-projects/project-builder/<%=projectID%>/add-items"
+        action="/your-projects/<%=user._id%>/project-builder/<%=projectID%>/add-items"
         method="GET"
       >
         <button class="big-button" type="submit">+ Add Single Item</button>
@@ -72,6 +74,9 @@
 
       <HR />
       <h6> Your project will auto-save.</h6>
+      <form action="/your-projects/<%= user._id%>/project-builder/<%= projectID%>?_method=DELETE" method="POST">
+        <button class="red" type="submit">Delete Project</button>
+      </form>
 
       <%- include('../partials/footer') %>
     </tr>

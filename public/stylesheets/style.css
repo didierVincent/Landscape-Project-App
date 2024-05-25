@@ -31,7 +31,7 @@ body {
 }
 
 div.content {
-  margin-left: 200px;
+  margin-left: 225px;
   padding: 1px 16px;
   height: 1000px;
 }
@@ -59,6 +59,7 @@ div.content {
 
 .infotext {
   color: grey;
+  padding: 8px;
 }
 
 .login {
@@ -98,6 +99,23 @@ button.big-button {
   padding: 10px 20px;
   font-size: larger;
 }
+a.home-button {
+  display: inline-block;
+  border: none;
+  margin-top: 20px;
+  padding: 20px 80px;
+  font-size: large;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3%;
+}
+
+a.home-button:hover {
+  color: black;
+  background-color: #0489aa;
+}
 
 button.red {
   background-color: #bf4343;
@@ -107,4 +125,8 @@ button.red {
 .total-cost {
   display: flex;
   justify-content: space-evenly;
+}
+
+div.home {
+  margin: 0 auto;
 }

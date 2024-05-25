@@ -1,11 +1,15 @@
 var express = require("express");
 var router = express.Router();
+const homeCtrl = require("../controllers/home");
 const passport = require("passport");
+const ensureLoggedIn = require("../config/ensureLoggedIn");
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Home" });
+  res.render("index", { title: "Index" });
 });
+
+router.get("/home", ensureLoggedIn, homeCtrl.home);
 
 // Google OAuth login route
 router.get(
@@ -26,7 +30,7 @@ router.get(
 router.get(
   "/oauth2callback",
   passport.authenticate("google", {
-    successRedirect: "/your-projects",
+    successRedirect: "/home",
     failureRedirect: "/",
   })
 );

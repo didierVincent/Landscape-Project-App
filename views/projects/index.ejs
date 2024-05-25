@@ -1,9 +1,15 @@
 <%- include('../partials/header') %>
-<div class="content">
-  <h2>Your Projects</h2>
 
-  <div>Your projects will appear below:</div>
-  <BR>
+
+<div class="content">
+
+
+  <h1>Your Projects</h1>
+  <HR />
+
+
+  <% if (user.projects.length) { %>
+ 
 
     <table id="list">
         <thead>
@@ -11,7 +17,7 @@
             <th>ID</th>
             <th>Project Title</th>
             <th>Time Created</th>
-            <!-- <th>Total Project Cost</th> -->
+            <th>Total Project Cost</th>
             <th></th>
           </tr>
         </thead>
@@ -25,27 +31,30 @@
     <%= p.createdAt.getHours() %>:<%= p.createdAt.getMinutes() %>:<%= p.createdAt.getSeconds() %>
     (<%= p.createdAt.getDate() %>-<%= p.createdAt.getMonth() %>-<%= p.createdAt.getFullYear() %>)
   </td>
-<!-- <td>($0.00)</td> -->
+  <% let TPC = p.Total_Project_Cost.reduce((a, b) => a + b, 0) %>
+<td> $<%= TPC %></td>
   <td>
-    <!-- <a href="/your-projects/project-builder/<%= p._id %>">View/Edit</a>  -->
-    <form action="/your-projects/project-builder/<%= p._id %>" method="GET">
+    <form action="/your-projects/<%= user._id %>/project-builder/<%= p._id %>" method="GET">
     <button type="submit">View/Edit</button>
-    </form>
-  </td>
-  <td>
-    <form action="" method="DELETE">
-      <button class="red" type="submit">Delete Project</button>
     </form>
   </td>
 </tr>
       <% }); %>
     </tbody>
 </table>
+
+<% } else { %>
+  <h3>Let's get started!</h3>
+  <div class="infotext">
+    
+     <div>Create a new project and add the items you need for your next landscaping project.</div>
+  </div>
+<% } %>
+
       <HR>
     <BR>
-        <form action="/your-projects/project-builder/:id" method="POST">
-            <button href="/your-projects/project-builder/<%= user.projects._id %> 
-              type="submit">+ Build New Project</button>
+        <form action="/your-projects/<%= user._id %>" method="POST">
+            <button class="big-button" type="submit">+ Build New Project</button>
         </form>
       <%- include('../partials/footer') %>
   </div>

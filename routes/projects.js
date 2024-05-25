@@ -5,15 +5,44 @@ const itemsCtrl = require("../controllers/items");
 const ensureLoggedIn = require("../config/ensureLoggedIn");
 
 // GET /your-projects
-router.get("/", ensureLoggedIn, projectsCtrl.index);
+router.get("/:userID", ensureLoggedIn, projectsCtrl.showProjects);
 
 // POST /your-projects
-router.post("/project-builder/:id", ensureLoggedIn, projectsCtrl.create);
+router.post("/:userID/", ensureLoggedIn, projectsCtrl.createNewProject);
 
-router.get("/project-builder/:id", ensureLoggedIn, projectsCtrl.showNewProject);
+router.get(
+  "/:userID/project-builder/:projectID",
+  ensureLoggedIn,
+  projectsCtrl.showNewProject
+);
 
-router.get("/project-builder/:id/add-items", ensureLoggedIn, itemsCtrl.index);
+router.get(
+  "/:userID/project-builder/:projectID/add-items",
+  ensureLoggedIn,
+  itemsCtrl.index
+);
 
-router.post("/project-builder/:id/add-items", ensureLoggedIn, itemsCtrl.add);
+router.post(
+  "/:userID/project-builder/:projectID/add-items",
+  ensureLoggedIn,
+  itemsCtrl.add
+);
+
+router.put(
+  "/:userID/project-builder/:projectID",
+  ensureLoggedIn,
+  projectsCtrl.updateProjectName
+);
+router.delete(
+  "/:userID/project-builder/:projectID",
+  ensureLoggedIn,
+  projectsCtrl.deleteProject
+);
+
+router.delete(
+  "/:userID/project-builder/:projectID/items/:itemID",
+  ensureLoggedIn,
+  itemsCtrl.deleteItem
+);
 
 module.exports = router;

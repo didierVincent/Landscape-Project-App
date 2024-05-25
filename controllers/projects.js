@@ -3,23 +3,23 @@ const Project = require("../models/Project");
 const User = require("../models/User");
 
 module.exports = {
-  index,
-  create,
+  showProjects,
+  createNewProject,
   showNewProject,
-  // delete: deleteProject,
+  deleteProject,
+  updateProjectName,
 };
 
-async function index(req, res) {
+async function showProjects(req, res) {
   const user = await User.findById(req.user.id);
-  const projects = await Project.find({});
-  // const projectID = req.params.id; // can't use... no params in route
+  // console.log("======= req.params.id LOG =======");
+  // console.log(projectID);
   // const project = user.projects.find((p) => p._id == projectID);
   // const TPC = project.Total_Project_Cost.reduce((a, b) => a + b, 0);
-  console.log(".INDEX LOG");
-  console.log(user.projects);
+  // console.log(".INDEX LOG");
+  // console.log(user.projects);
   res.render("projects/index", {
     title: "Your Projects",
-    // user,
     // projectID,
     // project,
     // TPC,
@@ -28,12 +28,12 @@ async function index(req, res) {
 
 async function showNewProject(req, res) {
   const user = await User.findById(req.user.id);
-  const projectID = req.params.id;
-  const project = user.projects.find((p) => p._id == projectID);
+  const projectID = req.params.projectID;
+  let project = user.projects.find((p) => p._id == projectID);
+  let TPC = project.Total_Project_Cost.reduce((a, b) => a + b, 0);
   console.log("======= req.params.id LOG =======");
   console.log(projectID);
   console.log("======= showNewProject LOG =======");
-  const TPC = project.Total_Project_Cost.reduce((a, b) => a + b, 0);
 
   res.render("project-builder/project-builder", {
     title: "Project Builder",
@@ -44,7 +44,20 @@ async function showNewProject(req, res) {
   });
 }
 
-async function create(req, res) {
+async function updateProjectName(req, res) {
+  try {
+    const user = await User.findOne({ _id: req.user.id });
+    user.projects.id(req.params.projectID).Name = req.body.Name;
+    await user.save();
+    res.redirect(
+      `/your-projects/${user._id}/project-builder/${req.params.projectID}`
+    );
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+}
+
+async function createNewProject(req, res) {
   try {
     const newProject = new Project(req.body);
     // console.log("OXOXOXOXOXOX new project below OXOXOXOXOXOX");
@@ -54,7 +67,7 @@ async function create(req, res) {
     // console.log(user);
     user.projects.push(newProject);
     await user.save();
-    res.redirect("/your-projects");
+    res.redirect(`/your-projects/${user._id}`);
     // console.log("OXOXOXOXOXOX NEW user log below OXOXOXOXOXOX");
     // console.log(user);
   } catch (err) {
@@ -63,18 +76,13 @@ async function create(req, res) {
   }
 }
 
-// old code: was to create new project with a POST method but not inside user schema
-
-// async function create(req, res) {
-//   try {
-//     const newProject = new Project(req.body);
-//     await newProject.save().then((newProject) => {
-//       console.log(newProject);
-//     });
-//     res.redirect(`/your-projects/project-builder/${newProject._id}`);
-//   } catch (err) {
-//     // Typically some sort of validation error
-//     console.log(err);
-//     res.render("/your-projects", { errorMsg: err.message });
-//   }
-// }
+async function deleteProject(req, res) {
+  try {
+    const user = await User.findOne({ _id: req.user.id });
+    user.projects.remove(req.params.projectID);
+    await user.save();
+    res.redirect(`/your-projects/${user._id}`);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+}

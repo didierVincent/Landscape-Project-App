@@ -9,10 +9,11 @@
   <body>
     <div class="sidebar">
       <% if (user) { %>
-      <a href="/your-projects/"
+      <a href="/home"
+        <%- title === 'Home' ? 'class="active"' : '' %>>Home</a>
+        <a href="/your-projects/<%= user._id %>"
         <%- title === 'Your Projects' ? 'class="active"' : '' %>>Your
-        Projects</a
-      >
+        Projects</a>
       <a 
         <%- title === 'Project Builder' ? 'class="active"' : '' %>>Project Builder
       <a
