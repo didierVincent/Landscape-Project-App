@@ -4,6 +4,6 @@ module.exports = {
 
 async function home(req, res) {
   res.render("home", {
-    title: "Your Projects",
+    title: "Home",
   });
 }

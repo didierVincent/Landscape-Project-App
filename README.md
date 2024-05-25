@@ -70,17 +70,17 @@ Node, Express, MongoDB, Mongoose, CSS & JavaScript
 
 ## Roadmap
 
-- [ ] Create App with basic item list builder functionality, with hard coded mock up data (no APIs)
+- [x] Create App with basic item list builder functionality, with hard coded mock up data (no APIs)
 - [ ] Use real products and prices from suppliers, hard code current values
 - [ ] Implement APIs to database to fetch up-to-date prices for products
 - [ ] (add more below)
 
 ## Stories (in order of priority)
 
-- [ ] As a user, I want to be able to create an item list with building and hardware products with their prices included.
-- [ ] As a user, I want to be able to save my items lists as projects so I can access them later.
-- [ ] As a user, I want to be able to create multiple projects (item lists of products)
-- [ ] As a user, I want to be able to edit or delete a project I have created.
+- [x] As a user, I want to be able to create an item list with building and hardware products with their prices included.
+- [x] As a user, I want to be able to save my items lists as projects so I can access them later.
+- [x] As a user, I want to be able to create multiple projects (item lists of products)
+- [x] As a user, I want to be able to edit or delete a project I have created.
 
 ### Optional Stories (in order of priority)
 
@@ -104,57 +104,59 @@ Node, Express, MongoDB, Mongoose, CSS & JavaScript
 
 #### Create basic routes to MVP pages first
 
-- [ ] Login
-- [ ] Projects
-- [ ] Project Builder
-- [ ] Add Single Item
+- [x] Login
+- [x] Home
+- [x] Projects
+- [x] Project Builder
+- [x] Add Single Item
 
 ### All Pages - Quick Sidebar CSS
 
-- [ ] Quickly create sidebar for each view (setup in stylesheet?)
+- [x] Quickly create sidebar for each view (setup in stylesheet?)
 
-### View: Login Page
+### View: Home / Login Page
 
-- [ ] Create quick view, (setup OAuth later)
+- [x] Create quick view, (setup OAuth later)
 
 ### View: Projects Page
 
-- [ ] Show user created projects in a list (with details if possible like in wireframe)
-- [ ] Add [+ New Project] button that redirects to Project Builder Page
+- [x] Show user created projects in a list (with details if possible like in wireframe)
+- [x] Add [+ Build New Project] button that redirects to Project Builder Page
 
 ### View: Project Builder Page
 
-- [ ] Project List showing items selected underneath
+- [x] Project List showing items selected underneath
 - [ ] Add a Quanity input box next to each item
-- [ ] (Default text shown if no items selected yet)
-- [ ] Project Builder buttons: [+ Add Single Item] (redirects to Add Single Item Page)
-- [ ] Display Total Project Cost: (setup later)
-- [ ] Save button (saves and redirects to Projects page)
+- [x] (Default text shown if no items selected yet)
+- [x] Project Builder buttons: [+ Add Single Item] (redirects to Add Single Item Page)
+- [x] Display Total Project Cost: (setup later)
+- [x] Auto-save functionality
 
 ### View: Add Single Item Page
 
-- [ ] Add 20 Items from mock up database in a list
-- [ ] [+ Add] buttons (setup later)
+- [x] Add 20 Items from mock up database in a list
+- [x] [+ Add] buttons (setup later)
 
 ### CRUD: Login Page
 
-- [ ] Learn/Setup OAuth for page
+- [x] Learn/Setup OAuth for page
 
 ### CRUD: Projects Page
 
-- [ ] Set up so user can create projects and view/delete them on their account
-- [ ] Add a edit/delete button
+- [x] Set up so user can create projects and view/delete them on their account
+- [x] Add a view/edit button
 
 ### CRUD: Project Builder Page
 
-- [ ] Make sure selected Items add to list
-- [ ] Setup Display Total Project Cost: Calculate sum of item prices and show in text
+- [x] Make sure selected Items add to list
+- [x] Setup Display Total Project Cost: Calculate sum of item prices and show in text
 - [ ] Add a Quanity input box for each item
-- [ ] Add delete button to remove an item
+- [x] Add delete button to remove an item
+- [x] Add delete project button to remove project
 
 ### CRUD: Add Single Item Page
 
-- [ ] Add '+Add' button to each item (adds to project list and redirects to Project Builder Page)
+- [x] Add '+Add' button to each item (adds to project list and redirects to Project Builder Page)
 
 ### CSS Styling / Details (ref to wireframe)
 
@@ -174,7 +176,7 @@ Node, Express, MongoDB, Mongoose, CSS & JavaScript
 
 ### Refactor using Real Data
 
-- [ ] Find realistic products from competitive suppliers, and replace database
+- [ ] Find realistic products from competitive suppliers, and refactor database
 - [ ] Use APIs where available to retrieve up to date prices
 
 ### Things to refactor
