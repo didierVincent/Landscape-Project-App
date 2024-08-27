@@ -1,193 +1,193 @@
-# Landscape Project List App! (Item List App)
+# LANDSCAPE PROJECT LIST APP! (ITEM LIST APP)
 
-**Unit 2 Project - Node/Express/MongoDB Full-stack CRUD Application**
-<BR> (will come up with an app name later)
+**UNIT 2 PROJECT - NODE/EXPRESS/MONGODB FULL-STACK CRUD APPLICATION**
+<BR> (WILL COME UP WITH AN APP NAME LATER)
 
-## Description
+## DESCRIPTION
 
-**Quickly build your own comprehensive project list for your next Landscaping Project!**
+**QUICKLY BUILD YOUR OWN COMPREHENSIVE PROJECT LIST FOR YOUR NEXT LANDSCAPING PROJECT!**
 
 <BR>
-Easy user-friendly app built for anyone to calculate costs for anything.
-For personal home projects, for your best friend's backyard, or more comprehensive lists for contractors looking to make quick quotes for clients.
+EASY USER-FRIENDLY APP BUILT FOR ANYONE TO CALCULATE COSTS FOR ANYTHING.
+FOR PERSONAL HOME PROJECTS, FOR YOUR BEST FRIEND'S BACKYARD, OR MORE COMPREHENSIVE LISTS FOR CONTRACTORS LOOKING TO MAKE QUICK QUOTES FOR CLIENTS.
 
-## Getting Started!
+## GETTING STARTED!
 
-**Here's a link to my app!:** https://landscape-project-app.onrender.com
+**HERE'S A LINK TO MY APP!:** HTTPS://LANDSCAPE-PROJECT-APP.ONRENDER.COM
 
-Trello Link: https://trello.com/b/C3CVYmkt/project-2-landscape-project-builder-item-list-app-using-apis
+TRELLO LINK: HTTPS://TRELLO.COM/B/C3CVYMKT/PROJECT-2-LANDSCAPE-PROJECT-BUILDER-ITEM-LIST-APP-USING-APIS
 
-## Screenshots
+## SCREENSHOTS
 
-**(add view title here)**
+**(ADD VIEW TITLE HERE)**
 
-![Title (add updated image here)]
+![TITLE (ADD UPDATED IMAGE HERE)]
 
-## Technology Used (double check later)
+## TECHNOLOGY USED (DOUBLE CHECK LATER)
 
-Node, Express, MongoDB, Mongoose, CSS & JavaScript
-<BR> (Created in Visual Studio Code)
+NODE, EXPRESS, MONGODB, MONGOOSE, CSS & JAVASCRIPT
+<BR> (CREATED IN VISUAL STUDIO CODE)
 
-## Next Steps
+## NEXT STEPS
 
-- Use APIs to fetch up to date product data
-- For contractors:
-  - Ability to add margin / labour costs to create a comprehensive quote.
-    <BR> Have a 'Show/Hide' toggle button to include margin/labour costs from view.
-    <BR> (Thinking of having an option to keep those costs hidden during a live quotation with a client)
-- Create compatible Mobile Browser App
-- Create IOS/Andriod App
+- USE APIS TO FETCH UP TO DATE PRODUCT DATA
+- FOR CONTRACTORS:
+  - ABILITY TO ADD MARGIN / LABOUR COSTS TO CREATE A COMPREHENSIVE QUOTE.
+    <BR> HAVE A 'SHOW/HIDE' TOGGLE BUTTON TO INCLUDE MARGIN/LABOUR COSTS FROM VIEW.
+    <BR> (THINKING OF HAVING AN OPTION TO KEEP THOSE COSTS HIDDEN DURING A LIVE QUOTATION WITH A CLIENT)
+- CREATE COMPATIBLE MOBILE BROWSER APP
+- CREATE IOS/ANDRIOD APP
 
-## Initial Wireframe
+## INITIAL WIREFRAME
 
-**Login Page**
-![Login Page](<wireframe/Login Page.png>)
+**LOGIN PAGE**
+![LOGIN PAGE](<WIREFRAME/LOGIN PAGE.PNG>)
 
-**Home / Your Projects Page**
-![Home Page / Your Projects](<wireframe/Home Page.png>)
+**HOME / YOUR PROJECTS PAGE**
+![HOME PAGE / YOUR PROJECTS](<WIREFRAME/HOME PAGE.PNG>)
 
-**Project Builder Page** (New Project)
-![New Project](<wireframe/Project Builder Page (New Project).png>)
+**PROJECT BUILDER PAGE** (NEW PROJECT)
+![NEW PROJECT](<WIREFRAME/PROJECT BUILDER PAGE (NEW PROJECT).PNG>)
 
-**(Example Project, Buttons Annotated)**
-![alt text](<wireframe/Project Builder Page (Example List, Buttons Explained).png>)
+**(EXAMPLE PROJECT, BUTTONS ANNOTATED)**
+![ALT TEXT](<WIREFRAME/PROJECT BUILDER PAGE (EXAMPLE LIST, BUTTONS EXPLAINED).PNG>)
 
-**+ Add Single Item Page** (full product list)
-![Add Single Item](<wireframe/+ Add Single Item Page.png>)
+**+ ADD SINGLE ITEM PAGE** (FULL PRODUCT LIST)
+![ADD SINGLE ITEM](<WIREFRAME/+ ADD SINGLE ITEM PAGE.PNG>)
 
-## Wireframe (Extras)
+## WIREFRAME (EXTRAS)
 
-**+ Add Landscape Page** (+Add Decking Page)
-![Add Landscape 1](<wireframe/+ Add Landscape Page (eg + Add Decking) without custom.png>)
+**+ ADD LANDSCAPE PAGE** (+ADD DECKING PAGE)
+![ADD LANDSCAPE 1](<WIREFRAME/+ ADD LANDSCAPE PAGE (EG + ADD DECKING) WITHOUT CUSTOM.PNG>)
 
-**+ Add Category Item Page** (+ Add Timber)
-![Add Category Item Page](<wireframe/+ Add Category Item Page.png>)
+**+ ADD CATEGORY ITEM PAGE** (+ ADD TIMBER)
+![ADD CATEGORY ITEM PAGE](<WIREFRAME/+ ADD CATEGORY ITEM PAGE.PNG>)
 
-**+ Add Custom Item Page**
-![Add Custom Item Page](<wireframe/+ Add Custom Page.png>)
+**+ ADD CUSTOM ITEM PAGE**
+![ADD CUSTOM ITEM PAGE](<WIREFRAME/+ ADD CUSTOM PAGE.PNG>)
 
-## Database ER Diagram
+## DATABASE ER DIAGRAM
 
-![ER Diagram](<wireframe/Database ER diagram v2.3.png>)
+![ER DIAGRAM](<WIREFRAME/DATABASE ER DIAGRAM V2.3.PNG>)
 
-## Roadmap
+## ROADMAP
 
-- [x] Create App with basic item list builder functionality, with hard coded mock up data (no APIs)
-- [ ] Use real products and prices from suppliers, hard code current values
-- [ ] Implement APIs to database to fetch up-to-date prices for products
-- [ ] (add more below)
+- [x] CREATE APP WITH BASIC ITEM LIST BUILDER FUNCTIONALITY, WITH HARD CODED MOCK UP DATA (NO APIS)
+- [ ] USE REAL PRODUCTS AND PRICES FROM SUPPLIERS, HARD CODE CURRENT VALUES
+- [ ] IMPLEMENT APIS TO DATABASE TO FETCH UP-TO-DATE PRICES FOR PRODUCTS
+- [ ] (ADD MORE BELOW)
 
-## Stories (in order of priority)
+## STORIES (IN ORDER OF PRIORITY)
 
-- [x] As a user, I want to be able to create an item list with building and hardware products with their prices included.
-- [x] As a user, I want to be able to save my items lists as projects so I can access them later.
-- [x] As a user, I want to be able to create multiple projects (item lists of products)
-- [x] As a user, I want to be able to edit or delete a project I have created.
+- [x] AS A USER, I WANT TO BE ABLE TO CREATE AN ITEM LIST WITH BUILDING AND HARDWARE PRODUCTS WITH THEIR PRICES INCLUDED.
+- [x] AS A USER, I WANT TO BE ABLE TO SAVE MY ITEMS LISTS AS PROJECTS SO I CAN ACCESS THEM LATER.
+- [x] AS A USER, I WANT TO BE ABLE TO CREATE MULTIPLE PROJECTS (ITEM LISTS OF PRODUCTS)
+- [x] AS A USER, I WANT TO BE ABLE TO EDIT OR DELETE A PROJECT I HAVE CREATED.
 
-### Optional Stories (in order of priority)
+### OPTIONAL STORIES (IN ORDER OF PRIORITY)
 
-- [ ] As a user, I want the product prices to be accurate and up to date. (API implementation)
+- [ ] AS A USER, I WANT THE PRODUCT PRICES TO BE ACCURATE AND UP TO DATE. (API IMPLEMENTATION)
 
-# To Do
+# TO DO
 
-### Create Mock Up Data for app
+### CREATE MOCK UP DATA FOR APP
 
-- [x] Create an ER Diagram to plan product database
-- [x] Create a mock up product list of 20 items for database
-- [x] Give each product a category (Decking, Retaining Wall, Other)
-- [x] Add data to new MongoDB database
+- [x] CREATE AN ER DIAGRAM TO PLAN PRODUCT DATABASE
+- [x] CREATE A MOCK UP PRODUCT LIST OF 20 ITEMS FOR DATABASE
+- [x] GIVE EACH PRODUCT A CATEGORY (DECKING, RETAINING WALL, OTHER)
+- [x] ADD DATA TO NEW MONGODB DATABASE
 
-### Create Wireframe
+### CREATE WIREFRAME
 
-- [x] Draft wireframe, including all different views
-- [x] Finalise wireframe in Figma
+- [x] DRAFT WIREFRAME, INCLUDING ALL DIFFERENT VIEWS
+- [x] FINALISE WIREFRAME IN FIGMA
 
-## Create Express App
+## CREATE EXPRESS APP
 
-#### Create basic routes to MVP pages first
+#### CREATE BASIC ROUTES TO MVP PAGES FIRST
 
-- [x] Login
-- [x] Home
-- [x] Projects
-- [x] Project Builder
-- [x] Add Single Item
+- [x] LOGIN
+- [x] HOME
+- [x] PROJECTS
+- [x] PROJECT BUILDER
+- [x] ADD SINGLE ITEM
 
-### All Pages - Quick Sidebar CSS
+### ALL PAGES - QUICK SIDEBAR CSS
 
-- [x] Quickly create sidebar for each view (setup in stylesheet?)
+- [x] QUICKLY CREATE SIDEBAR FOR EACH VIEW (SETUP IN STYLESHEET?)
 
-### View: Home / Login Page
+### VIEW: HOME / LOGIN PAGE
 
-- [x] Create quick view, (setup OAuth later)
+- [x] CREATE QUICK VIEW, (SETUP OAUTH LATER)
 
-### View: Projects Page
+### VIEW: PROJECTS PAGE
 
-- [x] Show user created projects in a list (with details if possible like in wireframe)
-- [x] Add [+ Build New Project] button that redirects to Project Builder Page
+- [x] SHOW USER CREATED PROJECTS IN A LIST (WITH DETAILS IF POSSIBLE LIKE IN WIREFRAME)
+- [x] ADD [+ BUILD NEW PROJECT] BUTTON THAT REDIRECTS TO PROJECT BUILDER PAGE
 
-### View: Project Builder Page
+### VIEW: PROJECT BUILDER PAGE
 
-- [x] Project List showing items selected underneath
-- [ ] Add a Quanity input box next to each item
-- [x] (Default text shown if no items selected yet)
-- [x] Project Builder buttons: [+ Add Single Item] (redirects to Add Single Item Page)
-- [x] Display Total Project Cost: (setup later)
-- [x] Auto-save functionality
+- [x] PROJECT LIST SHOWING ITEMS SELECTED UNDERNEATH
+- [ ] ADD A QUANITY INPUT BOX NEXT TO EACH ITEM
+- [x] (DEFAULT TEXT SHOWN IF NO ITEMS SELECTED YET)
+- [x] PROJECT BUILDER BUTTONS: [+ ADD SINGLE ITEM] (REDIRECTS TO ADD SINGLE ITEM PAGE)
+- [x] DISPLAY TOTAL PROJECT COST: (SETUP LATER)
+- [x] AUTO-SAVE FUNCTIONALITY
 
-### View: Add Single Item Page
+### VIEW: ADD SINGLE ITEM PAGE
 
-- [x] Add 20 Items from mock up database in a list
-- [x] [+ Add] buttons (setup later)
+- [x] ADD 20 ITEMS FROM MOCK UP DATABASE IN A LIST
+- [x] [+ ADD] BUTTONS (SETUP LATER)
 
-### CRUD: Login Page
+### CRUD: LOGIN PAGE
 
-- [x] Learn/Setup OAuth for page
+- [x] LEARN/SETUP OAUTH FOR PAGE
 
-### CRUD: Projects Page
+### CRUD: PROJECTS PAGE
 
-- [x] Set up so user can create projects and view/delete them on their account
-- [x] Add a view/edit button
+- [x] SET UP SO USER CAN CREATE PROJECTS AND VIEW/DELETE THEM ON THEIR ACCOUNT
+- [x] ADD A VIEW/EDIT BUTTON
 
-### CRUD: Project Builder Page
+### CRUD: PROJECT BUILDER PAGE
 
-- [x] Make sure selected Items add to list
-- [x] Setup Display Total Project Cost: Calculate sum of item prices and show in text
-- [ ] Add a Quanity input box for each item
-- [x] Add delete button to remove an item
-- [x] Add delete project button to remove project
+- [x] MAKE SURE SELECTED ITEMS ADD TO LIST
+- [x] SETUP DISPLAY TOTAL PROJECT COST: CALCULATE SUM OF ITEM PRICES AND SHOW IN TEXT
+- [ ] ADD A QUANITY INPUT BOX FOR EACH ITEM
+- [x] ADD DELETE BUTTON TO REMOVE AN ITEM
+- [x] ADD DELETE PROJECT BUTTON TO REMOVE PROJECT
 
-### CRUD: Add Single Item Page
+### CRUD: ADD SINGLE ITEM PAGE
 
-- [x] Add '+Add' button to each item (adds to project list and redirects to Project Builder Page)
+- [x] ADD '+ADD' BUTTON TO EACH ITEM (ADDS TO PROJECT LIST AND REDIRECTS TO PROJECT BUILDER PAGE)
 
-### CSS Styling / Details (ref to wireframe)
+### CSS STYLING / DETAILS (REF TO WIREFRAME)
 
-- [ ] Add more detail to side bar
-- [ ] Make pages to replicate original wireframe
-- [ ] Add sort button to Projects Page?
-- [ ] Add search box to Projects Page?
-      (add more details below later...)
+- [ ] ADD MORE DETAIL TO SIDE BAR
+- [ ] MAKE PAGES TO REPLICATE ORIGINAL WIREFRAME
+- [ ] ADD SORT BUTTON TO PROJECTS PAGE?
+- [ ] ADD SEARCH BOX TO PROJECTS PAGE?
+      (ADD MORE DETAILS BELOW LATER...)
 
-## Add Extra Pages
+## ADD EXTRA PAGES
 
-(add more details below later...)
+(ADD MORE DETAILS BELOW LATER...)
 
-#### Add Landscape Page
+#### ADD LANDSCAPE PAGE
 
-#### Add Category Item Page
+#### ADD CATEGORY ITEM PAGE
 
-### Refactor using Real Data
+### REFACTOR USING REAL DATA
 
-- [ ] Find realistic products from competitive suppliers, and refactor database
-- [ ] Use APIs where available to retrieve up to date prices
+- [ ] FIND REALISTIC PRODUCTS FROM COMPETITIVE SUPPLIERS, AND REFACTOR DATABASE
+- [ ] USE APIS WHERE AVAILABLE TO RETRIEVE UP TO DATE PRICES
 
-### Things to refactor
+### THINGS TO REFACTOR
 
-### Things to debug
+### THINGS TO DEBUG
 
-### Optional Setup
+### OPTIONAL SETUP
 
-- [ ] Find supplier APIs and test if you can fetch product prices from them:
-- [ ] Bunnings API
-- [ ] (other supplier) API
-- [ ] (other supplier) API
+- [ ] FIND SUPPLIER APIS AND TEST IF YOU CAN FETCH PRODUCT PRICES FROM THEM:
+- [ ] BUNNINGS API
+- [ ] (OTHER SUPPLIER) API
+- [ ] (OTHER SUPPLIER) API
