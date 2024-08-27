@@ -130,3 +130,7 @@ button.red {
 div.home {
   margin: 0 auto;
 }
+
+.number-input {
+  width: 40px;
+}

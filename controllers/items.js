@@ -31,15 +31,18 @@ async function index(req, res) {
 
 async function add(req, res) {
   try {
+    // locate current user and current project
     const user = await User.findById(req.user.id);
     const projectID = req.params.projectID;
     const project = user.projects.find((p) => p._id == projectID);
-    console.log("XOXOXOXOXOXOXOXOXOXOXOX");
-    console.log(project);
+    // create new Item from form inputs, then add to user's current project and save
     const newItem = new Item(req.body);
+    
+    project.Items.push(newItem);
+    // add price to TPC for sum
     const addPrice = req.body.Price;
     project.Total_Project_Cost.push(addPrice);
-    project.Items.push(newItem);
+
     await user.save();
 
     res.redirect(`/your-projects/${user._id}/project-builder/${projectID}`);

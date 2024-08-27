@@ -1,17 +1,19 @@
-# Landscape Project Builder App! (Item List App)
+# Landscape Project List App! (Item List App)
 
 **Unit 2 Project - Node/Express/MongoDB Full-stack CRUD Application**
 <BR> (will come up with an app name later)
 
 ## Description
 
-**Quickly build your own comprehensive list of building and hardware products for your next Landscaping Project!**
+**Quickly build your own comprehensive project list for your next Landscaping Project!**
+
 <BR>
-Project builder app to calculate costs for personal projects, or for contractors looking to make quick quotes for clients.
+Easy user-friendly app built for anyone to calculate costs for anything.
+For personal home projects, for your best friend's backyard, or more comprehensive lists for contractors looking to make quick quotes for clients.
 
 ## Getting Started!
 
-**Here's a link my app!:** https://landscape-project-app.onrender.com
+**Here's a link to my app!:** https://landscape-project-app.onrender.com
 
 Trello Link: https://trello.com/b/C3CVYmkt/project-2-landscape-project-builder-item-list-app-using-apis
 
