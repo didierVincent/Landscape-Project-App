@@ -19,11 +19,13 @@
       <% items.forEach(function(i) { %>
       <tr>
         <form action="/your-projects/<%= user._id%>/project-builder/<%= projectID %>/add-items" method="POST">
+
           <td><input type="hidden" name="Name" value="<%= i.Name%>"><%= i.Name%></td>
         <td><input type="hidden" name="Supplier" value="<%= i.Supplier %>"><%= i.Supplier %></td>
         <td><input type="hidden" name="Category_ID" value="<%= i.Category_ID %>"><%= i.Category_ID %></td>
         <td><input type="hidden" name="Quality" value="<%= i.Quality %>"><%= i.Quality %> / 3</td>
-        <td>$<input type="hidden" name="Price" value="<%= i.Price %>"><%= i.Price %></td>
+        <td><input type="hidden" name="Price" value="<%= i.Price %>">$<%= i.Price %></td>
+        <td><input class="number-input" type="number" name="Quantity"></td>
         <td>
             <button type="submit">+ Add</button></a>
           </form>
